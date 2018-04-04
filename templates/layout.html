@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+  <head>
+    <title>{% block title %}Sample App{% endblock %}</title>
+    <link rel="stylesheet" href="/static/css/styles.css" type="text/css">
+  </head>
+  <body>
+    <div id="content">{% block content %}{% endblock %}</div>
+    <div id="footer">
+      {% block footer %}
+        <p>&copy; Created with love by Wise.io in San Francisco / Denmark</p>
+      {% endblock %}
+    </div>
+  </body>
+</html>

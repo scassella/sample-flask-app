@@ -1,0 +1,7 @@
+{% extends "layout.html" %}
+{% block title %}Home | {{ super() }}{% endblock %}
+
+{% block content %}
+    <h1>Welcome to the Predix Web Components & Flask Integration Test App!!!</h1>
+    <h2>Click here to go to the error page: <a href="{{ url_for('error') }}">HERE</a></h2>
+{% endblock %}
