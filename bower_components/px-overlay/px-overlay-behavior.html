@@ -1,0 +1,27 @@
+<link rel="import" href="../polymer/polymer.html"/>
+
+<script>
+window.PxOverlayBehavior = window.PxOverlayBehavior || {};
+const PxOverlayBehavior = window.PxOverlayBehavior;
+
+/*
+    Name:
+    PxOverlayBehavior.sharedProperties
+
+    Description:
+    Polymer behavior that provides the containerType property
+
+    Dependencies:
+    - D3.js
+
+    @polymerBehavior PxOverlayBehavior.sharedProperties
+*/
+PxOverlayBehavior.sharedProperties = {
+  properties: {
+    /**
+    * An optional type set on the px-overlay-container and px-overlay-content to associate specific overlay-contents with their container
+    */
+    containerType: String
+  }
+};
+</script>

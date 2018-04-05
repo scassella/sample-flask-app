@@ -2,7 +2,184 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e0c93d6-90a6-4141-a103-846470e70f31" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bower.json" beforeDir="false" afterPath="$PROJECT_DIR$/bower.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/.bower.json" beforeDir="false" afterPath="$PROJECT_DIR$/bower_components/polymer/.bower.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/bower_components/polymer/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/bower.json" beforeDir="false" afterPath="$PROJECT_DIR$/bower_components/polymer/bower.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/externs/closure-types.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/externs/polymer-externs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/externs/polymer-internal-shared-types.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/externs/polymer-internal-types.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/externs/webcomponents-externs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/gen-tsd.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/img/migration.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/lib/elements/array-selector.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/lib/elements/custom-style.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/lib/elements/dom-bind.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/lib/elements/dom-if.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/lib/elements/dom-module.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/lib/elements/dom-repeat.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/lib/legacy/class.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/lib/legacy/legacy-element-mixin.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/lib/legacy/mutable-data-behavior.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/lib/legacy/polymer-fn.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/lib/legacy/polymer.dom.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/lib/legacy/templatizer-behavior.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/lib/mixins/dir-mixin.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/lib/mixins/disable-upgrade-mixin.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/lib/mixins/element-mixin.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/lib/mixins/gesture-event-listeners.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/lib/mixins/mutable-data.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/lib/mixins/properties-changed.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/lib/mixins/properties-mixin.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/lib/mixins/property-accessors.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/lib/mixins/property-effects.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/lib/mixins/template-stamp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/lib/utils/array-splice.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/lib/utils/async.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/lib/utils/boot.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/lib/utils/case-map.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/lib/utils/debounce.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/lib/utils/flattened-nodes-observer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/lib/utils/flush.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/lib/utils/gestures.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/lib/utils/html-tag.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/lib/utils/import-href.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/lib/utils/mixin.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/lib/utils/path.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/lib/utils/render-status.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/lib/utils/resolve-url.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/lib/utils/settings.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/lib/utils/style-gather.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/lib/utils/templatize.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/lib/utils/unresolved.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/polymer-element.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/polymer.html" beforeDir="false" afterPath="$PROJECT_DIR$/bower_components/polymer/polymer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/types/extra-types.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/types/lib/elements/array-selector.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/types/lib/elements/custom-style.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/types/lib/elements/dom-bind.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/types/lib/elements/dom-if.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/types/lib/elements/dom-module.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/types/lib/elements/dom-repeat.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/types/lib/legacy/class.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/types/lib/legacy/legacy-element-mixin.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/types/lib/legacy/mutable-data-behavior.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/types/lib/legacy/polymer-fn.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/types/lib/legacy/polymer.dom.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/types/lib/legacy/templatizer-behavior.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/types/lib/mixins/dir-mixin.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/types/lib/mixins/disable-upgrade-mixin.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/types/lib/mixins/element-mixin.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/types/lib/mixins/gesture-event-listeners.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/types/lib/mixins/mutable-data.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/types/lib/mixins/properties-changed.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/types/lib/mixins/properties-mixin.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/types/lib/mixins/property-accessors.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/types/lib/mixins/property-effects.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/types/lib/mixins/template-stamp.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/types/lib/utils/array-splice.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/types/lib/utils/async.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/types/lib/utils/boot.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/types/lib/utils/case-map.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/types/lib/utils/debounce.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/types/lib/utils/flattened-nodes-observer.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/types/lib/utils/flush.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/types/lib/utils/gestures.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/types/lib/utils/html-tag.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/types/lib/utils/import-href.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/types/lib/utils/mixin.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/types/lib/utils/path.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/types/lib/utils/render-status.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/types/lib/utils/resolve-url.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/types/lib/utils/settings.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/types/lib/utils/style-gather.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/types/lib/utils/templatize.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/types/lib/utils/unresolved.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/types/polymer-element.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/types/polymer.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/polymer/wct.conf.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/.bower.json" beforeDir="false" afterPath="$PROJECT_DIR$/bower_components/webcomponentsjs/.bower.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/.eslintrc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/.github/CODEOWNERS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/CONTRIBUTING.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/bower_components/webcomponentsjs/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/bower.json" beforeDir="false" afterPath="$PROJECT_DIR$/bower_components/webcomponentsjs/bower.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/closure-output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/custom-elements-es5-adapter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/entrypoints/custom-elements-es5-adapter-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/entrypoints/webcomponents-hi-ce-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/entrypoints/webcomponents-hi-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/entrypoints/webcomponents-hi-sd-ce-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/entrypoints/webcomponents-hi-sd-ce-pf-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/entrypoints/webcomponents-hi-sd-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/entrypoints/webcomponents-sd-ce-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/externs/webcomponents.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/gulpfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/bower_components/webcomponentsjs/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/src/post-polyfill.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/src/pre-polyfill.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/src/promise.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/src/unresolved.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/tests/ce-import-upgrade-async.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/tests/ce-import-upgrade.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/tests/ce-import.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/tests/ce-upgrade-order.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/tests/ce-upgradedocumenttree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/tests/dev-loader-swizzled.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/tests/dev-loader.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/tests/force-polyfills.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/tests/imports/a1-define.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/tests/imports/a1-import.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/tests/imports/a1-instance.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/tests/imports/a1-reference.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/tests/imports/csp-import-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/tests/imports/csp-import-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/tests/imports/csp-script-1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/tests/imports/csp-script-2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/tests/imports/current-script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/tests/imports/element-import-a.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/tests/imports/element-import-b.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/tests/imports/element-import.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/tests/imports/import-file.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/tests/imports/import-upgrade-order.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/tests/imports/script-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/tests/imports/script-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/tests/imports/simple-element-es5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/tests/imports/simple-element.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/tests/integration-es5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/tests/integration.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/tests/load.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/tests/promise.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/tests/runner.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/tests/smoke.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/tests/template-and-CE.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/tests/template-and-imports.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/wct.conf.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/webcomponents-hi-ce.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/webcomponents-hi-ce.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/webcomponents-hi-sd-ce.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/webcomponents-hi-sd-ce.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/webcomponents-hi-sd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/webcomponents-hi-sd.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/webcomponents-hi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/webcomponents-hi.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/webcomponents-lite.js" beforeDir="false" afterPath="$PROJECT_DIR$/bower_components/webcomponentsjs/webcomponents-lite.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/webcomponents-lite.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/webcomponents-loader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/webcomponents-sd-ce.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/webcomponents-sd-ce.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,7 +203,7 @@
       <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
+            <state relative-caret-position="30">
               <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
               <folding>
                 <element signature="e#0#59#0" expanded="true" />
@@ -35,9 +212,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
@@ -49,15 +230,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layout.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="layout.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/layout.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="40" lean-forward="true" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
-              <folding>
-                <element signature="e#913#919#0" expanded="true" />
-                <element signature="e#933#941#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="412">
+              <caret line="28" column="21" lean-forward="true" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -76,8 +253,8 @@
         <option value="$PROJECT_DIR$/static/styles.css" />
         <option value="$PROJECT_DIR$/static/css/styles.css" />
         <option value="$PROJECT_DIR$/app.py" />
-        <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/templates/layout.html" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
       </list>
     </option>
   </component>
@@ -97,6 +274,22 @@
             <path>
               <item name="sample-flask-app" type="b2602c69:ProjectViewProjectNode" />
               <item name="sample-flask-app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sample-flask-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sample-flask-app" type="462c0819:PsiDirectoryNode" />
+              <item name="bower_components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sample-flask-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sample-flask-app" type="462c0819:PsiDirectoryNode" />
+              <item name="bower_components" type="462c0819:PsiDirectoryNode" />
+              <item name="px-branding-bar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sample-flask-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sample-flask-app" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -140,7 +333,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1680" height="973" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21097046" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -156,11 +348,19 @@
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21097046" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32951945" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32876712" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Python Console" order="7" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -209,10 +409,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
-          <folding>
-            <element signature="e#913#919#0" expanded="true" />
-            <element signature="e#933#941#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -257,10 +453,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-          <folding>
-            <element signature="e#913#919#0" expanded="true" />
-            <element signature="e#933#941#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -295,10 +487,145 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="40" lean-forward="true" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="40" lean-forward="true" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="59" selection-start-column="59" selection-end-column="59" />
           <folding>
-            <element signature="e#913#919#0" expanded="true" />
-            <element signature="e#933#941#0" expanded="true" />
+            <element signature="e#0#59#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="70" selection-start-line="7" selection-start-column="70" selection-end-line="7" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/sass/sample-flask-app.scss" />
+    <entry file="file://$PROJECT_DIR$/templates/layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.bowerrc" />
+    <entry file="file://$PROJECT_DIR$/bower.json" />
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="59" selection-start-column="59" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/sass/sample-flask-app.scss" />
+    <entry file="file://$PROJECT_DIR$/static/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="28" column="21" lean-forward="true" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
