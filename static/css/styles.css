@@ -1,3 +1,15 @@
 body {
     background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+px-branding-bar {
+    --px-branding-bar-height: 100px;
+    --px-branding-bar-background-color: green;
+    --px-branding-bar-logo-and-title-text-color: white;
+}
+
+px-app-nav {
+    --px-app-nav-background-color: green;
 }
