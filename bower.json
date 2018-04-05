@@ -1,0 +1,22 @@
+{
+  "name": "sample-flask-app",
+  "homepage": "https://github.com/scassella/sample-flask-app",
+  "authors": [
+    "scassella <saracassella@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "px-spinner": "^2.2.2",
+    "jquery": "^3.3.1",
+    "px-app-nav": "^2.1.7"
+  }
+}
