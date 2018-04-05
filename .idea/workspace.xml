@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e0c93d6-90a6-4141-a103-846470e70f31" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/bower.json" beforeDir="false" afterPath="$PROJECT_DIR$/bower.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,11 +52,11 @@
       <file leaf-file-name="layout.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/layout.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+            <state relative-caret-position="210">
+              <caret line="14" column="40" lean-forward="true" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
               <folding>
-                <element signature="e#517#523#0" expanded="true" />
-                <element signature="e#537#545#0" expanded="true" />
+                <element signature="e#913#919#0" expanded="true" />
+                <element signature="e#933#941#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -96,11 +97,6 @@
             <path>
               <item name="sample-flask-app" type="b2602c69:ProjectViewProjectNode" />
               <item name="sample-flask-app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sample-flask-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sample-flask-app" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -214,8 +210,8 @@
         <state relative-caret-position="135">
           <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
           <folding>
-            <element signature="e#517#523#0" expanded="true" />
-            <element signature="e#537#545#0" expanded="true" />
+            <element signature="e#913#919#0" expanded="true" />
+            <element signature="e#933#941#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -262,8 +258,8 @@
         <state relative-caret-position="210">
           <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
           <folding>
-            <element signature="e#517#523#0" expanded="true" />
-            <element signature="e#537#545#0" expanded="true" />
+            <element signature="e#913#919#0" expanded="true" />
+            <element signature="e#933#941#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -297,11 +293,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/layout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+        <state relative-caret-position="210">
+          <caret line="14" column="40" lean-forward="true" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
           <folding>
-            <element signature="e#517#523#0" expanded="true" />
-            <element signature="e#537#545#0" expanded="true" />
+            <element signature="e#913#919#0" expanded="true" />
+            <element signature="e#933#941#0" expanded="true" />
           </folding>
         </state>
       </provider>
