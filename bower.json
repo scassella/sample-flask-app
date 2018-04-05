@@ -15,6 +15,7 @@
     "tests"
   ],
   "dependencies": {
-    "px-spinner": "^2.2.2"
+    "px-spinner": "^2.2.2",
+    "jquery": "^3.3.1"
   }
 }
