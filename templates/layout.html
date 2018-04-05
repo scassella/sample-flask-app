@@ -1,9 +1,14 @@
 <!doctype html>
 <html>
   <head>
-    <title>{% block title %}Sample App{% endblock %}</title>
-    <link rel="stylesheet" href="/static/css/styles.css" type="text/css">
-    <script src="{{ url_for('bower.static', filename='webcomponentsjs/webcomponents-lite.js') }}"></script>
+      <title>{% block title %}Sample App{% endblock %}</title>
+      <link rel="stylesheet" href="/static/css/styles.css" type="text/css">
+      <script src="{{ url_for('bower.static', filename='webcomponentsjs/webcomponents-lite.js') }}"></script>
+      <link rel="import" href="{{ url_for('bower.static', filename='polymer/polymer.html') }}"/>
+
+      <!-- Predix components used by this app view -->
+      <link rel="import" href="{{ url_for('bower.static', filename='px-spinner/px-spinner.html') }}"/>
+
   </head>
   <body>
     <px-spinner size="100"></px-spinner>
