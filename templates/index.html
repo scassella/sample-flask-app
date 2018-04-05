@@ -1,10 +1,4 @@
-{% extends "layout.html" %}
-{% block title %}Home | {{ super() }}{% endblock %}
-
-{% block content %}
-    <h1>Welcome to the Predix Web Components & Flask Integration Test App!!!</h1>
-
-    <px-data-table table-data='[{"first":"Valentine","last":"Meyer","email":"valentinemeyer@scentric.com"},{"first":"Silva","last":"Alexander","email":"silvaalexander@gmail.com"},{"first":"Hopkins","last":"Wong","email":"hopkinswong@hotmail.com"},{"first":"Joe","last":"Sherman","email":"joejoe@yahoo.com"},{"first":"Jane","last":"Bartlett","email":"jane@scentric.com"}]' language="en" include-all-columns><px-data-table-column name='first' sortable editable filterable></px-data-table-column></px-data-table>
-
-    <h2>Click here to go to the error page: <a href="{{ url_for('error') }}">HERE</a></h2>
+{% extends 'admin/master.html' %}
+{% block body %}
+    Hello World from MyView!
 {% endblock %}

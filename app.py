@@ -1,15 +1,31 @@
-from flask import Flask, render_template, url_for, redirect
+from flask import Flask
+from flask_admin import Admin, BaseView, expose
+from flask_admin.contrib.sqla import ModelView
 from flask_bower import Bower
+from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 Bower(app)
 
-@app.route('/')
-def index():
-    return render_template('index.html')
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////'
+app.config['SECRET_KEY'] = 'mysecret'
 
-@app.route('/error')
-def error(errnum=404):
-    return "Sorry, there was an error - {}".format(errnum)
+db = SQLAlchemy(app)
 
-app.run(debug=True, port=9000, host='localhost') #debug=True enables hot reload while developing
+admin = Admin(app)
+
+class Person(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(30))
+
+class MyView(BaseView):
+    @expose('/')
+    def index(self):
+        return self.render('index.html')
+
+admin.add_view(MyView(name='Hello'))
+admin.add_view(ModelView(Person, db.session))
+
+if __name__ == '__main__':
+    app.run(debug=True)
