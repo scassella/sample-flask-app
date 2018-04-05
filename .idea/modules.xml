@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/sample-flask-app.iml" filepath="$PROJECT_DIR$/.idea/sample-flask-app.iml" />
+      <module fileurl="file://$USER_HOME$/sample_flask_app/.idea/sample_flask_app.iml" filepath="$USER_HOME$/sample_flask_app/.idea/sample_flask_app.iml" />
       <module fileurl="file://$USER_HOME$/sara-flask-admin/.idea/sara-flask-admin.iml" filepath="$USER_HOME$/sara-flask-admin/.idea/sara-flask-admin.iml" />
     </modules>
   </component>

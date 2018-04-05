@@ -8,7 +8,7 @@ app = Flask(__name__)
 Bower(app)
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////Users/saracassella/database.db'
 app.config['SECRET_KEY'] = 'mysecret'
 
 db = SQLAlchemy(app)
