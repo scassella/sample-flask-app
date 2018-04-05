@@ -1,0 +1,220 @@
+<link rel="import" href="../polymer/polymer.html"/>
+<link rel="import" href="px-overlay-behavior.html"/>
+<link rel="import" href="px-overlay-container.html"/>
+
+<!--
+A component which hoists it's slotted content up to a px-overlay-container. This is done to escape out of stacking contexts so overlays / modals / floating content can be shown over other content.
+
+If no px-overlay-container is found between px-overlay-content and the document body, one is created at the document body.
+
+### Usage
+
+#### Generic
+```
+    <px-overlay-content
+        container-type="foo"
+        event-names='["my-first-event-from-element-1", "my-second-event-from-my-element"]'>
+        <my-element></my-element>
+    </px-overlay-content>
+```
+
+@element px-overlay-content
+@blurb A component which hoists it's slotted content up to a px-overlay-container
+@homepage index.html
+@demo index.html
+-->
+<dom-module id="px-overlay-content">
+  <template>
+    <style>
+      :host {
+        width: 0;
+        height: 0;
+      }
+    </style>
+    <slot id="myslot"></slot>
+  </template>
+</dom-module>
+
+<script>
+  Polymer({
+
+    is: 'px-overlay-content',
+    behaviors: [
+      PxOverlayBehavior.sharedProperties
+    ],
+
+    properties: {
+      /**
+      * Holder for the slotted content which will be hoisted
+      */
+      _content: Array,
+      /**
+      * The container to which content is hoisted
+      */
+      _container: HTMLElement,
+      /**
+      * The slot element
+      */
+      _slot: HTMLElement,
+      /**
+      * A list of string event names that should get refired to this component from the container
+      */
+      eventNames: {
+        type: Array,
+        value: function() { return []; }
+      },
+
+      _isAttached: {
+        type: Boolean,
+        value: false
+      },
+      /**
+      * Whether this component should hoist it's content to a container or leave it local.
+      */
+      hoist: {
+        type: Boolean,
+        value: true
+        //yes, I made true by default. Seems unlikely anyone would want to use this component and set it to false unless you are binding it to a property, in which case, this is ok.
+      }
+    },
+
+    observers: [
+      '_hoistPropChanged(hoist)'
+    ],
+
+    created: function () {
+      this._onSlotChangedBound = this._onSlotChange.bind(this);
+
+    },
+
+    ready: function() {
+      // this._slot = this.shadowRoot ? this.shadowRoot.querySelector('slot') : this.querySelector('slot');
+      // wrote the polymer 2 code above, but apparently polymer 1 does some kind of transform turning the <slot> into a <content> tag. So we can just fallback on the P1 way and use an id
+      this._slot = this.$.myslot;
+    },
+
+    attached: function() {
+      Polymer.RenderStatus.afterNextRender(this, () => {
+
+        this._slot.addEventListener('slotchange', this._onSlotChangedBound);
+
+        this._content = this._getSlotContent();
+
+        this._isAttached = true;
+
+        this._hoistPropChanged(this.hoist);
+      });
+
+    },
+
+    detached: function() {
+      this._isAttached = false;
+
+      if(this._container) {
+        this._container.detachContent(this);
+      }
+
+    },
+
+    hoistOverlay: function() {
+      const event = new CustomEvent('px-overlay-attachment-request', {
+        bubbles: true,
+        composed: true,
+        cancelable: true
+      });
+
+      this.dispatchEvent(event);
+
+      // If no container responded, create one
+      if (!event.defaultPrevented) {
+        const elem = document.createElement('px-overlay-container');
+
+        if(this.containerType) {
+          elem.setAttribute('container-type', this.containerType);
+        }
+
+        document.body.appendChild(elem);
+
+        Polymer.RenderStatus.afterNextRender(elem, () => {
+          this.dispatchEvent(event);
+        });
+      }
+    },
+
+    _hoistPropChanged: function(hoist) {
+      if(!this._isAttached) {
+        return;
+      }
+
+      if(hoist && !this._container) {
+        this.hoistOverlay();
+      }
+
+      if(!hoist && this._container) {
+        this._container.detachContent(this);
+        this._container = undefined;
+        this._content.forEach(elem => {
+          Polymer.dom(this).appendChild(elem);
+        });
+      }
+
+    },
+
+    _onSlotChange: function () {
+      if(!this.hoist || !this._container) {
+        return;
+      }
+
+      const newContent = this._getSlotContent();
+
+      if(newContent.length) {
+        this._content.push(...newContent);
+        // Array.prototype.push.apply(this._content,newContent);
+        this._container.appendNewContent(this, newContent);
+      }
+    },
+
+    _getSlotContent: function() {
+      const content = Polymer.FlattenedNodesObserver ?
+          Polymer.FlattenedNodesObserver.getFlattenedNodes(this) :
+          Polymer.dom(this).getEffectiveChildNodes();
+
+      return content.filter(n => n.nodeType === Node.ELEMENT_NODE);
+    },
+
+    /*
+    * Removes a slotted child
+    */
+    removeChild: function(elem) {
+    // This is fine...
+    // Overwrite the native method so as to not confuse people.
+    // There is nothing that can possibly go wrong with this
+
+      if(!elem) {
+        return;
+      }
+
+      // if not hoisted, rely on normal removeChild to remove it locally
+      if(!this.hoist) {
+        const f = Element.prototype.removeChild;
+        f.apply(this, arguments);
+        return;
+      }
+
+      const i = this._content.indexOf(elem);
+
+      // if hoisted and something went wrong :-/
+      if(i === -1) {
+        console.warn('This child should have been hoisted but was not... Trying to remove locally.');
+        const f = Element.prototype.removeChild;
+        f.apply(this, arguments);
+        return;
+      }
+
+      this._content.splice(i, 1);
+      this._container.removeElem(this, elem);
+
+    }
+
+  });
+</script>
