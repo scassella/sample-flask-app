@@ -3,3 +3,19 @@ body {
     margin: 0;
     padding: 0;
 }
+
+px-branding-bar {
+    --px-branding-bar-height: 100px;
+    --px-branding-bar-background-color: green;
+    --px-branding-bar-font-size: 2rem;
+    --px-branding-bar-logo-and-title-text-color: blue;
+}
+
+px-app-nav {
+    --px-app-nav-background-color: white;
+}
+
+px-spinner {
+    --px-spinner-fill-color: blue;
+    --px-spinner-background-color: pink;
+}
