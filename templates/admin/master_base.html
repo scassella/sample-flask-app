@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+  <head>
+      <title>{% block title %}Sample App{% endblock %}</title>
+      {% block head_meta %}
+      <link rel="stylesheet" href="/static/css/styles.css" type="text/css">
+      <link rel="stylesheet" href="/static/sass/sample_flask_app_styles.scss" type="text/css">
+      <!--<link rel="import" href="{{ url_for('bower.static', filename='px-colors-design/_settings.colors.scss') }}"/>-->
+
+      <base href="https://polygit.org/px-*+PredixDev+*/webcomponentsjs+v0.7.24/polymer+v1.11.3/components/">
+      <link rel="import" href="polymer/polymer.html"/>
+      <link rel="import" href="px-theme/px-theme-styles.html"/>
+      <link rel="import" href="px-app-nav/px-app-nav.html"/>
+      <link rel="import" href="px-branding-bar/px-branding-bar.html"/>
+      <link rel="import" href="px-login/px-login.html"/>
+      <link rel="import" href="px-colors-design/_settings.colors.scss"/>
+
+      <script src="{{ url_for('bower.static', filename='webcomponentsjs/webcomponents-lite.js') }}"></script>
+      <link rel="import" href="{{ url_for('bower.static', filename='polymer/polymer.html') }}"/>
+      <link rel="import" href="{{ url_for('bower.static', filename='px-theme/px-theme-styles.html') }}"/>
+      {% endblock %}
+
+      <!-- Predix components used by this app view -->
+      <link rel="import" href="{{ url_for('bower.static', filename='px-app-nav/px-app-nav.html') }}"/>
+      <link rel="import" href="{{ url_for('bower.static', filename='px-branding-bar/px-branding-bar.html') }}"/>
+      <link rel="import" href="{{ url_for('bower.static', filename='px-login/px-login.html') }}"/>
+      <style>
+          body {
+            background-color: $black;
+          }
+      </style>
+      <custom-style>
+        <style is="custom-style">
+            px-branding-bar {
+                --px-branding-bar-height: 50px;
+                --px-branding-bar-background-color: white;
+                --px-branding-bar-font-size: 1.2rem;
+                --px-branding-bar-logo-and-title-text-color: rgb(0,122,204); /* $primary-default */
+            }
+
+            px-app-nav {
+                --px-app-nav-background-color: rgb(226,232,237); /* $gray2 */
+                --px-app-nav-item-background-color: rgb(226,232,237); /* $gray2 */
+                --px-app-nav-item-background-color--hover: rgb(197,209,216); /* $gray4 */
+                --px-app-nav-item-background-color--selected: white;
+                --px-app-nav-item-stripe-color--selected: rgb(9,129,156); /* $select-default */
+                --px-app-nav-item-icon-color--selected: black;
+                --px-app-nav-item-icon-color: black;
+                --px-app-nav-item-text-color--hover: black;
+                --px-app-nav-item-text-color--selected: black;
+                --px-app-nav-item-text-color: black;
+            }
+        </style>
+      </custom-style>
+  </head>
+
+  <body>
+      <px-branding-bar application-title="Wise Factory"></px-branding-bar>
+      <px-app-nav items='[{"label":"Environments","id":"environments","icon":"px-fea:home", "children": [
+                            { "label" : "ENV #1", "id" : "e1" },
+                            { "label" : "ENV #2", "id" : "e2" },
+                            { "label" : "ENV #3", "id" : "e3" }]}
+                        , {"label":"Models","id":"models","icon":"px-fea:asset"}
+                        , {"label":"Users","id":"users","icon":"px-fea:users"}
+                        , {"label":"Dashboards","id":"dashboards","icon":"px-fea:dashboard"}
+                        , {"label":"CI","id":"ci","icon":"px-fea:dev-ops"}
+                        , {"label":"Developer Tools","id":"developer_tools","icon":"px-fea:administration", "children": [
+                            { "label" : "DEV #1", "id" : "d1" }]}]'
+                        selected-route='["models"]'>
+      </px-app-nav>
+      <px-login
+          login-url="/login"
+          logout-url="/logout"
+          user-info-url="/userinfo"
+          do-not-fetch-user-info-on-load
+          popover-location="bottom"
+          menu-items='[{"url":"#settings","label":"Settings"},{"url":"#account","label":"My Account"}]'>
+        </px-login>
+    <div id="body">{% block body %}{% endblock %}</div>
+    <div id="tail">
+      {% block tail %}
+        <p>&copy; 2016-2018 | Crafted with &hearts; by wise.io at GE Digital</p>
+      {% endblock %}
+    </div>
+  </body>
+</html>

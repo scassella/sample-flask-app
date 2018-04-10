@@ -1,0 +1,15 @@
+{% extends 'admin/master.html' %}
+
+{% block title %}Models | {{ super() }}{% endblock %}
+
+{% block head_meta %}
+        {{ super() }}
+
+      <!-- Predix components used by this app view -->
+      <link rel="import" href="{{ url_for('bower.static', filename='px-spinner/px-spinner.html') }}"/>
+      <link rel="import" href="{{ url_for('bower.static', filename='px-data-table/px-data-table.html') }}"/>
+{% endblock %}
+
+{% block body %}
+    Hello World from models!
+{% endblock %}

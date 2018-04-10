@@ -1,0 +1,25 @@
+// Settings
+@import "{{ url_for('bower.static', filename='px-colors-design/_settings.colors.scss') }}";
+@import "bower_components/px-colors-design/_settings.colors.scss";
+
+// Tools
+
+// Generic
+@import "bower_components/px-normalize-design/_generic.normalize.scss";
+@import "bower_components/px-box-sizing-design/_generic.box-sizing.scss";
+@import "bower_components/px-helpers-design/_generic.helpers.scss";
+
+// Base
+@import "bower_components/px-flexbox-design/_base.flexbox.scss";
+@import "bower_components/px-viewport-design/_base.viewport.scss";
+
+// Meta
+
+// Objects
+
+// Component
+// Your css goes in here
+
+// Trumps
+@import "bower_components/px-spacing-responsive-design/_trumps.spacing-responsive.scss";
+@import "bower_components/px-widths-responsive-design/_trumps.widths-responsive.scss";

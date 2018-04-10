@@ -19,6 +19,14 @@
     "jquery": "^3.3.1",
     "px-app-nav": "^2.1.7",
     "px-branding-bar": "^1.1.2",
-    "px-data-table": "^6.1.0"
+    "px-data-table": "^6.1.0",
+    "px-starter-kit-design": "^1.0.3",
+    "px-theme": "^3.0.0",
+    "px-login": "^2.2.11",
+    "polymer": "1.11.3",
+    "px-colors-design": "^1.0.8"
+  },
+  "resolutions": {
+    "webcomponentsjs": "^0.7.24"
   }
 }

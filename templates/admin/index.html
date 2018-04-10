@@ -10,7 +10,7 @@
 {% endblock %}
 
 {% block body %}
-    <px-spinner size="100"></px-spinner>
+    <px-data-table table-data='{{ Person }}' language="en" hide-pagination-control><px-data-table-column name='Person' sortable editable filterable></px-data-table-column></px-data-table>
 {% endblock %}
 
 {% block tail %}
